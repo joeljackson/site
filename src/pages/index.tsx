@@ -1,7 +1,8 @@
 import * as React from 'react'
 import DefaultLayout from '../layouts/index'
+import { Row, Jumbotron } from 'react-bootstrap'
 
-import './index.css'
+import './index.scss'
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -23,22 +24,22 @@ export default class extends React.Component<IndexPageProps, {}> {
     const renderPage = () => {
       return (
         <div>
-        <div className="jumbotron-background" >
-          <header className="jumbotron bg-cover text-white" >
-            <h1 className="jumbotron-text">
-              Does reaching top cognitive and physical performance seem elusive?
-            </h1>
-          </header>
+          <div className="jumbotron-background" >
+            <Jumbotron className="bg-cover text-white" >
+              <h1 className="jumbotron-text">
+                Does reaching top cognitive and physical performance seem elusive?
+              </h1>
+            </Jumbotron>
+          </div>
+          <Row>
+            <h1>Hi people</h1>
+            <p>
+              Welcome to your new{' '}
+              <strong>{this.props.data.site.siteMetadata.title}</strong> site.
+            </p>
+            <p>Now go build something great.</p>
+          </Row>
         </div>
-        <div>
-          <h1>Hi people</h1>
-          <p>
-            Welcome to your new{' '}
-            <strong>{this.props.data.site.siteMetadata.title}</strong> site.
-          </p>
-          <p>Now go build something great.</p>
-        </div>
-      </div>
       )
     }
 
