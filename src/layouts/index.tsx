@@ -2,22 +2,22 @@ import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import "./index.css"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Header = () => (
-  <div>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+  <nav className="navbar container">
+    <div className="row col-8 mx-auto">
+      <Link to="/" >
+        <img
+          src="/images/UGL_Logo_Purple.png"
+          className="img-fluid"
+          alt="Upgrade Labs"
+        />
+      </Link>
     </div>
-  </div>
+  </nav>
 )
 
 interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {

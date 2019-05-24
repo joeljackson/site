@@ -1,0 +1,18 @@
+.jumbotron {
+  align-items: center;
+  color: #ffffff;
+  background-color: green;
+  opacity:0.6;
+  display: flex;
+  height: 200px;
+}
+
+.jumbotron-background {
+
+  background-image: url('/images/jumbotron.png');
+  background-size: 100%;
+}
+
+.jumbotron-text {
+  font-size: 2rem;
+}
