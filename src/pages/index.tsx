@@ -1,4 +1,5 @@
 import * as React from 'react'
+import DefaultLayout from '../layouts/index'
 
 import './index.css'
 
@@ -19,8 +20,9 @@ export default class extends React.Component<IndexPageProps, {}> {
     super(props, context)
   }
   public render() {
-    return (
-      <div>
+    const renderPage = () => {
+      return (
+        <div>
         <div className="jumbotron-background" >
           <header className="jumbotron bg-cover text-white" >
             <h1 className="jumbotron-text">
@@ -37,6 +39,13 @@ export default class extends React.Component<IndexPageProps, {}> {
           <p>Now go build something great.</p>
         </div>
       </div>
+      )
+    }
+
+    return (
+      <DefaultLayout>
+        {renderPage}
+      </DefaultLayout>
     )
   }
 }
