@@ -1,5 +1,8 @@
 {
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "strict": true,
         "outDir": "./dist/",
         "sourceMap": true,
         "noImplicitAny": true,

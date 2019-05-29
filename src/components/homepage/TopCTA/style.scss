@@ -1,0 +1,19 @@
+@import "../../../scss/bootstrap.scss";
+
+
+.details {
+  @include make-row();
+}
+
+.icon {
+  @include make-col(3);
+}
+
+.actions {
+  @include make-col(8);
+}
+
+.cta {
+  @include make-row();
+  @include make-col(12);
+}
