@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {DefaultLayout} from '../layouts/index';
-import { Row } from 'react-bootstrap';
 import { Hero } from '../components/homepage/Hero';
 import { TopCTA } from '../components/homepage/TopCTA';
+import { Modalities } from '../components/homepage/Modalities';
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -21,6 +21,7 @@ export default function() {
     <DefaultLayout>
       <Hero/>
       <TopCTA/>
+      <Modalities/>
     </DefaultLayout>
   );
 }

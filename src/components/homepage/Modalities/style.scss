@@ -1,0 +1,26 @@
+@import "../../../scss/bootstrap.scss";
+
+.teaser {
+  @include make-row();
+  .content {
+    @include make-col(11);
+  }
+}
+
+.modality {
+  @include make-row();
+  .modality-icon {
+    @include make-col(3);
+  }
+  .modality-name {
+    @include make-col(6);
+    display: flex;
+    align-items:center;
+    h3 {
+      @extend .display-4;
+    }
+  }
+  .modality-chevron {
+    @include make-col(3);
+  }
+}
