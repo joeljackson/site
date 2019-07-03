@@ -1,15 +1,16 @@
-.jumbotron {
-  align-items: center;
-  color: #ffffff;
-  background-color: green;
-  opacity:0.8;
-  display: flex;
-  height: 200px;
-}
+@import "../../../scss/bootstrap.scss";
 
 .homepage-hero {
   background-image: url('/images/jumbotron.png');
   background-size: 100%;
+  .jumbotron {
+    align-items: center;
+    color: #ffffff;
+    background-color: $electric-purple; 
+    opacity:0.8;
+    display: flex;
+    height: 200px;
+  }
 }
 
 .jumbotron-text {

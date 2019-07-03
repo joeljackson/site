@@ -15,5 +15,7 @@
 
 .cta {
   @include make-row();
-  @include make-col(12);
+  .get-started {
+    @include make-col(10);
+  }
 }
