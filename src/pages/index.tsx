@@ -3,6 +3,7 @@ import {DefaultLayout} from '../layouts/index';
 import { Hero } from '../components/homepage/Hero';
 import { TopCTA } from '../components/homepage/TopCTA';
 import { Modalities } from '../components/homepage/Modalities';
+import { MeetTheTeam } from '../components/homepage/MeetTheTeam'
 import { graphql } from 'gatsby';
 import { string } from 'prop-types';
 
@@ -39,6 +40,7 @@ export default function({data}) {
       <Hero/>
       <TopCTA/>
       <Modalities modalities={data.allContentfulModality.edges}/>
+      <MeetTheTeam biohackers={data.allContentfulBiohacker.edges}/>
     </DefaultLayout>
   );
 }
@@ -56,6 +58,22 @@ export const query = graphql`
           id
           name
           icon {
+            id
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+    allContentfulBiohacker {
+      edges {
+        node {
+          id
+          shortBio {
+            shortBio
+          }
+          photo {
             id
             file {
               url

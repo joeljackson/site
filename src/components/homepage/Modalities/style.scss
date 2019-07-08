@@ -4,6 +4,8 @@
   @include make-row();
   .content {
     @include make-col(11);
+    @extend .mx-auto;
+    @extend .font-weight-bold;
   }
 }
 
@@ -11,16 +13,25 @@
   @include make-row();
   .modality-icon {
     @include make-col(3);
+    @extend .d-flex;
+    @extend .align-items-center;
+    img {
+      @extend .w-50;
+      @extend .mx-auto;
+    }
   }
   .modality-name {
-    @include make-col(6);
+    @include make-col(7);
     display: flex;
     align-items:center;
     h3 {
-      @extend .display-4;
+      @extend .font-weight-bold;
     }
   }
   .modality-chevron {
-    @include make-col(3);
+    @include make-col(2);
+    svg {
+      @extend .w-50;
+    }
   }
 }

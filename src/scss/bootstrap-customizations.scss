@@ -4,3 +4,8 @@ $theme-colors: (
 
 $purple: map-get($theme-colors, "primary");
 $electric-purple: #7F26E4;
+$background-secondary: #DBD4E4;
+
+.background-purple {
+  background-color: $background-secondary;
+}

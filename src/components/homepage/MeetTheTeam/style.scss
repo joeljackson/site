@@ -1,0 +1,13 @@
+@import "../../../scss/bootstrap.scss";
+
+div.container {
+  @extend .py-4;
+}
+
+.header {
+  @include make-row();
+  @include make-col(12);
+  h3 {
+    @extend .mx-auto
+  }
+}
