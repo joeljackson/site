@@ -20,7 +20,7 @@ export function Modalities({modalities}) {
       </div>
       {modalities.map((value) => {
         return(
-          <div className='modality'>
+          <a href={`/modalities/${value.node.slug}`} className='modality'>
             <div className='modality-icon'>
               <img src={value.node.icon.file.url}></img>
             </div>
@@ -30,7 +30,7 @@ export function Modalities({modalities}) {
             <div className='modality-chevron'>
               <Chevron/>
             </div>
-          </div>
+          </a>
         );
       })}
     </Container>

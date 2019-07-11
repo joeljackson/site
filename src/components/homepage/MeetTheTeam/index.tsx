@@ -10,16 +10,19 @@ export function MeetTheTeam({biohackers}) {
       </div>
       <Carousel>
        {biohackers.map((value, index) => {
-          return(
-            <Carousel.Item>
-              <img
-                    className='d-block w-100'
-                    src={value.node.photo.file.url}
-                    alt='First slide'
-                  />
-              <span>{value.node.shortBio.shortBio}</span>
-            </Carousel.Item>
-          );
+          console.log(value.node);
+          if(value.node.showOnHomepage) {
+            return(
+              <Carousel.Item>
+                <img
+                      className='d-block w-100'
+                      src={value.node.photo.file.url}
+                      alt='First slide'
+                    />
+                <span>{value.node.shortBio.shortBio}</span>
+              </Carousel.Item>
+            );
+          }
        })}
       </Carousel>
     </Container>

@@ -57,6 +57,7 @@ export const query = graphql`
         node {
           id
           name
+          slug
           icon {
             id
             file {
@@ -70,6 +71,7 @@ export const query = graphql`
       edges {
         node {
           id
+          showOnHomepage
           shortBio {
             shortBio
           }

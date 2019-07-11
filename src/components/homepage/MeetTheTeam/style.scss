@@ -7,7 +7,8 @@ div.container {
 .header {
   @include make-row();
   @include make-col(12);
+  @extend .mx-0;
   h3 {
-    @extend .mx-auto
+    @extend .mx-auto;
   }
 }
