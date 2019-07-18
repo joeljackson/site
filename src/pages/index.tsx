@@ -4,6 +4,7 @@ import { Hero } from '../components/homepage/Hero';
 import { TopCTA } from '../components/homepage/TopCTA';
 import { Modalities } from '../components/homepage/Modalities';
 import { MeetTheTeam } from '../components/homepage/MeetTheTeam'
+import { YourUpgradeJourney} from '../components/homepage/YourUpgradeJourney'
 import { graphql } from 'gatsby';
 import { string } from 'prop-types';
 
@@ -41,6 +42,7 @@ export default function({data}) {
       <TopCTA/>
       <Modalities modalities={data.allContentfulModality.edges}/>
       <MeetTheTeam biohackers={data.allContentfulBiohacker.edges}/>
+      <YourUpgradeJourney/>
     </DefaultLayout>
   );
 }
